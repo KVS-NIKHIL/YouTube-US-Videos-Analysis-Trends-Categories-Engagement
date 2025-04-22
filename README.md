@@ -41,7 +41,7 @@ This project analyzes:
 
 
 
-## Data Processing
+# Data Processing
 
 ### Data Enrichment & Feature Engineering
 To enable richer analysis, the raw dataset was enhanced through the following transformations:
@@ -62,13 +62,12 @@ Mapped category IDs to names
 category_map = {
     1: 'Film & Animation',
     2: 'Autos & Vehicles'
+    }
     
-}
 data['category_name'] = data['category_id'].map(category_map)
 
 ### Status Flags:
-
 Created binary flags for: comments_disabled, ratings_disabled, video_removed
-# Converted publish_time to datetime
-data['publish_time'] = pd.to_datetime(data['publish_time'])
+
+
 
